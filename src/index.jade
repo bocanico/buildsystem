@@ -1,19 +1,227 @@
 doctype html
 html(lang='en')
     head
-        title Jade
-        script(type='text/javascript').
-            foo = true;
-            bar = function () {};
-            if (foo) {
-                bar(1 + 5)
-            }
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title Document
     body
-        h1 Jade - node template engine
-        #container.col
-            p.test You are amazing
-            p
-                | Jade is a terse and simple
-                | templating language with a
-                | strong focus on performance
-                | and powerful features.
+        // header
+        div(data-sticky-container='')
+            .sticky.title-bar(data-sticky='', data-options='marginTop:0;', style='width:100%')
+                .title-bar-left
+                    a(href='')
+                        img(src='assets/logo_bordeau_white.svg', width='100px', alt='')
+                .title-bar-right
+                    ul.menu.align-right
+                        li
+                            a(href='#')
+                                img(src='assets/facebook.png', alt='')
+                        li
+                            a(href='#')
+                                img(src='assets/linkedin.png', alt='')
+                        li
+                            a(href='#')
+                                img(src='assets/twitter.png', alt='')
+        // Bandeau D & You
+        #dyou
+            .row.align-center.align-middle
+                .columns.small-4.text-center
+                    img(src='assets/logo_bordeau_white.svg', width='250')
+                    h1 CHANGE THE CODE
+        // Clients
+        section
+            .headband.row
+                .shrink.columns
+                    h2
+                        | CLIENTS
+                        img(src='assets/clients_title.svg', alt='')
+                .columns
+                    hr
+            .row
+                .column.small-12
+                    .row.align-center
+                        .small-3.logos.text-center
+                            img(src='assets/axa.svg', alt='')
+                        .small-3.logos.text-center
+                            img(src='assets/societe_generale.svg', alt='')
+                        .small-3.logos.text-center
+                            img(src='assets/bnp.svg', alt='')
+                        .small-3.logos.text-center
+                            img(src='assets/SNCF.svg', alt='')
+                        .small-3.logos.text-center
+                            img(src='assets/seloger.png', alt='')
+                        .small-3.logos.text-center
+                            img(src='assets/deezer.svg', alt='')
+                        .small-3.logos.text-center
+                            img(src='assets/Le_Monde.svg', alt='')
+                        .small-3.logos.text-center
+                            img(src='assets/fdj.svg', alt='')
+                        .small-3.logos.text-center
+                            img(src='assets/molotov.png', alt='')
+                        .small-3.logos.text-center
+                            img(src='assets/backelite.png', alt='')
+                        .small-3.logos.text-center
+                            img(src='assets/docapost.png', alt='')
+                        .small-3.logos.text-center
+                            img(src='assets/docker.png', alt='')
+        // Technologies
+        section
+            .headband.row
+                .columns
+                    hr
+                .shrink.columns
+                    h2
+                        | TECHNOLOGIES
+                        img(src='assets/technologies_title.svg', alt='')
+            #technologies.row
+                .column.small-12
+                    .row.align-center
+                        .small-3.logos.text-center.align-middle.align-center
+                            img(src='assets/axa.svg', alt='')
+                            h4 AXA
+                        .small-3.logos.text-center.align-middle.align-center
+                            img(src='assets/societe_generale.svg', alt='')
+                            h4 SG
+                        .small-3.logos.text-center.align-middle.align-center
+                            img(src='assets/bnp.svg', alt='')
+                            h4 BNP
+                        .small-3.logos.text-center.align-middle.align-center
+                            img(src='assets/SNCF.svg', alt='')
+                            h4 SNCF
+        // Suivez-nous
+        section
+            .headband.row
+                .columns
+                    hr
+                .shrink.columns
+                    h2
+                        | SUIVEZ-NOUS
+                        img(src='assets/suivez-nous_title.svg', alt='')
+            .row
+                .column.small-12
+                    .row
+                        .vignette-container.small-6.medium-3.large-2
+                            .vignette
+                                .logo-twitter
+                                    img(src='assets/twitter.svg', alt='')
+                                div
+                                    img(src='assets/ypEqG_7s.jpg', alt='')
+                                a(href='') Nous accueillerons le prochain Meetup #E...
+                        .vignette-container.small-6.medium-3.large-2
+                            .vignette
+                                .logo-twitter
+                                    img(src='assets/twitter.svg', alt='')
+                                div
+                                    img(src='assets/ypEqG_7s.jpg', alt='')
+                                a(href='') #AngularJS Controller As Syntax : https:...
+                        .vignette-container.small-6.medium-3.large-2
+                            .vignette
+                                .logo-twitter
+                                    img(src='assets/twitter.svg', alt='')
+                                div
+                                    img(src='assets/ypEqG_7s.jpg', alt='')
+                                a(href='') Nous accueillerons le prochain Meetup #E...
+                        .vignette-container.small-6.medium-3.large-2
+                            .vignette
+                                .logo-twitter
+                                    img(src='assets/twitter.svg', alt='')
+                                div
+                                    img(src='assets/ypEqG_7s.jpg', alt='')
+                                a(href='') Nous accueillerons le prochain Meetup #E...
+                        .vignette-container.small-6.medium-3.large-2
+                            .vignette
+                                .logo-twitter
+                                    img(src='assets/twitter.svg', alt='')
+                                div
+                                    img(src='assets/ypEqG_7s.jpg', alt='')
+                                a(href='') Nous accueillerons le prochain Meetup #E...
+                        .vignette-container.small-6.medium-3.large-2
+                            .vignette
+                                .logo-twitter
+                                    img(src='assets/twitter.svg', alt='')
+                                div
+                                    img(src='assets/ypEqG_7s.jpg', alt='')
+                                a(href='') Nous accueillerons le prochain Meetup #E...
+                        .vignette-container.small-6.medium-3.large-2
+                            .vignette
+                                .logo-twitter
+                                    img(src='assets/twitter.svg', alt='')
+                                div
+                                    img(src='assets/ypEqG_7s.jpg', alt='')
+                                a(href='') Nous accueillerons le prochain Meetup #E...
+                        .vignette-container.small-6.medium-3.large-2
+                            .vignette
+                                .logo-twitter
+                                    img(src='assets/twitter.svg', alt='')
+                                div
+                                    img(src='assets/ypEqG_7s.jpg', alt='')
+                                a(href='') #AngularJS Controller As Syntax : https:...
+                        .vignette-container.small-6.medium-3.large-2
+                            .vignette
+                                .logo-twitter
+                                    img(src='assets/twitter.svg', alt='')
+                                div
+                                    img(src='assets/ypEqG_7s.jpg', alt='')
+                                a(href='') Nous accueillerons le prochain Meetup #E...
+                        .vignette-container.small-6.medium-3.large-2
+                            .vignette
+                                .logo-twitter
+                                    img(src='assets/twitter.svg', alt='')
+                                div
+                                    img(src='assets/ypEqG_7s.jpg', alt='')
+                                a(href='') Nous accueillerons le prochain Meetup #E...
+                        .vignette-container.small-6.medium-3.large-2
+                            .vignette
+                                .logo-twitter
+                                    img(src='assets/twitter.svg', alt='')
+                                div
+                                    img(src='assets/ypEqG_7s.jpg', alt='')
+                                a(href='') Nous accueillerons le prochain Meetup #E...
+                        .vignette-container.small-6.medium-3.large-2
+                            .vignette
+                                .logo-twitter
+                                    img(src='assets/twitter.svg', alt='')
+                                div
+                                    img(src='assets/ypEqG_7s.jpg', alt='')
+                                a(href='') Nous accueillerons le prochain Meetup #E...
+        // Temoignage de devs
+        section#testimony
+            .headband.row
+                .shrink.columns
+                    h2
+                        | TEMOIGNAGES DE DEVS
+                        img(src='assets/temoignages_title.svg', alt='')
+                .columns
+                    hr
+            .row
+                .column.small-12
+                    .row.align-center
+                        .small-3.medium-4.large-6.text-left
+                            img.float-left(src='assets/camille.png', alt='')
+                            h3 LE PROJET DE MES REVES
+                            q
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius explicabo fuga magni ratione
+                                | suscipit. Aspernatur assumenda esse magni maxime ?
+                            p
+                        .small-3.medium-4.large-6.text-left
+                            img.float-left(src='assets/charles.png', alt='')
+                            h3 J'AI PU PASSER A REACT
+                            q
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis provident quia
+                                | reprehenderit sit? Adipisci architecto cupiditate !
+                            p
+                        .small-3.medium-4.large-6.text-left
+                            img.float-left(src='assets/jp.png', alt='')
+                            h3 UNE SUPER EQUIPE
+                            q
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus error eveniet ipsa minima
+                                | mollitia praesentium quo, soluta tempore vero !
+                            p
+                        .small-3.medium-4.large-6.text-left
+                            img.float-left(src='assets/zach.png', alt='')
+                            h3 DES FORMATIONS INCROYABLES
+                            q
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi harum in ipsum repudiandae
+                                | vitae! Accusamus ad, aliquam architecto, cumque .
+                            p
